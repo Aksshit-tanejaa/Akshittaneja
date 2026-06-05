@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Graphic Design Portfolio | Akshit Taneja</title>
+  <meta name="description" content="Showcase of professional graphic design work including brand identity, product layouts, 3D renders, print flyers, and social media marketing designs.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Background Layer -->
+  <div class="bg-noise"></div>
+  
+  <!-- Animated Background Flares -->
+  <div class="orange-flares-container">
+    <div class="flare flare-1"></div>
+    <div class="flare flare-2"></div>
+    <div class="flare flare-3"></div>
+  </div>
+  
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-accent">▲</span> AKSHIT
+      </a>
+      <nav class="nav-menu">
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#what-i-build" class="nav-link">Services</a>
+        <a href="index.html#featured-work" class="nav-link">Work</a>
+        <a href="index.html#experience" class="nav-link">Journey</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="index.html#contact" class="btn btn-secondary btn-sm">Let's Talk</a>
+      </div>
+    </div>
+  </header>
+
+  <main style="padding-top: 8rem;">
+    <!-- Hero Section -->
+    <section class="design-hero">
+      <div class="hero-grid-overlay"></div>
+      <div class="design-hero-content">
+        <a href="index.html#featured-work" class="back-link">
+          <i data-lucide="arrow-left" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i> Back to Portfolio
+        </a>
+        <div class="hero-badge" style="margin-top: 1.5rem;">
+          <span class="badge-dot"></span> Design & Creative Showcase
+        </div>
+        <h1 class="section-title text-gradient" style="text-align: left; font-size: 3.5rem; margin-top: 1rem; margin-bottom: 1rem; max-width: 900px; line-height: 1.1;">
+          Graphic Design Portfolio
+        </h1>
+        <p class="hero-description" style="max-width: 800px; font-size: 1.2rem; margin-bottom: 3rem;">
+          Translating brand concepts, product details, and marketing messages into cohesive, high-impact visuals. View designs in their exact uncropped ratios below.
+        </p>
+        
+        <!-- Metrics Grid -->
+        <div class="metrics-summary-grid">
+          <div class="summary-metric-card">
+            <span class="summary-metric-val">24</span>
+            <span class="summary-metric-lbl">Total Creative Assets</span>
+          </div>
+          <div class="summary-metric-card">
+            <span class="summary-metric-val">4+</span>
+            <span class="summary-metric-lbl">Tool Stacks Mastered</span>
+          </div>
+          <div class="summary-metric-card">
+            <span class="summary-metric-val">100%</span>
+            <span class="summary-metric-lbl">Proportion Intact</span>
+          </div>
+          <div class="summary-metric-card">
+            <span class="summary-metric-val">0</span>
+            <span class="summary-metric-lbl">Cropped Previews</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design Gallery Section -->
+    <section class="design-showcase" id="gallery" style="padding-top: 4rem;">
+      <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+        <h2 class="section-title" style="text-align: left;">Explore Creative Works</h2>
+        <p class="section-subtitle" style="margin: 0; max-width: 700px; text-align: left;">
+          Click on any visual to expand it in full screen and read the design breakdown.
+        </p>
+        
+        <!-- Filter Controls -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All Designs</button>
+          <button class="filter-btn" data-filter="brand-print">Brand & Print Media</button>
+          <button class="filter-btn" data-filter="product-3d">Product & 3D Design</button>
+          <button class="filter-btn" data-filter="social-marketing">Social Media & Marketing</button>
+        </div>
+      </div>
+
+      <!-- Masonry Grid to keep EXACT proportions of images -->
+      <div class="masonry-grid" id="masonry-grid">
+        
+        <!-- Item 1: nike 3d -->
+        <div class="masonry-item product-3d" data-index="0" data-category="product-3d" data-title="Nike 3D Sneaker Render" data-description="3D product render and atmospheric scene composition highlighting material textures and athletic design detailing." data-software="Blender / Photoshop" data-img="assets/nike 3d.png">
+          <div class="masonry-img-wrapper">
+            <img src="assets/nike 3d.png" alt="Nike 3D Sneaker Render" class="masonry-img">
+            <div class="masonry-overlay">
+              <div class="zoom-icon-circle"><i data-lucide="maximize-2"></i></div>
+            </div>
+          </div>
+          <div class="masonry-info">
+            <span class="masonry-category-badge">Product & 3D</span>
+            <h3>Nike 3D Sneaker Render</h3>
+            <span class="masonry-tech-tag">Blender / Photoshop</span>
+          </div>
+        </div>
+
+        <!-- Item 2: the fold menu -->
+        <div class="masonry-item brand-print" data-index="1" data-category="brand-print" data-title="Multi-Fold Restaurant Menu" data-description="Elegant folding menu design structuring layout and clear hierarchy for high-end dining aesthetics." data-software="Illustrator / InDesign" data-img="assets/the fold menu.png">
+          <div class="masonry-img-wrapper">
+            <img src="assets/the fold menu.png" alt="Multi-Fold Restaurant Menu" class="masonry-img">
+            <div class="masonry-overlay">
+              <div class="zoom-icon-circle"><i data-lucide="maximize-2"></i></div>
+            </div>
+          </div>
+          <div class="masonry-info">
+            <span class="masonry-category-badge">Brand & Print</span>
+            <h3>Multi-Fold Restaurant Menu</h3>
+            <span class="masonry-tech-tag">Illustrator / InDesign</span>
+          </div>
+        </div>
+
+        <!-- Item 3: MAGZINE COVER -->
+        <div class="masonry-item brand-print" data-index="2" data-category="brand-print" data-title="Editorial Magazine Cover" data-description="Clean editorial cover layout balancing cover-photo space, masthead styling, and article headers." data-software="Photoshop / InDesign" data-img="assets/MAGZINE COVER.png">
+          <div class="masonry-img-wrapper">
+            <img src="assets/MAGZINE COVER.png" alt="Editorial Magazine Cover" class="masonry-img">
+            <div class="masonry-overlay">
+              <div class="zoom-icon-circle"><i data-lucide="maximize-2"></i></div>
+            </div>
+          </div>
+          <div class="masonry-info">
+            <span class="masonry-category-badge">Brand & Print</span>
+            <h3>Editorial Magazine Cover</h3>
+            <span class="masonry-tech-tag">Photoshop / InDesign</span>
+          </div>
+        </div>
+
+        <!-- Item 4: MAGZINE COVER 2 -->
+        <div class="masonry-item brand-print" data-index="3" data-category="brand-print" data-title="Modern Style Magazine Cover" data-description="Alternative lifestyle cover layout emphasizing modern typography grids and custom color harmonies." data-software="InDesign / Photoshop" data-img="assets/MAGZINE COVER 2.png">
+          <div class="masonry-img-wrapper">
+            <img src="assets/MAGZINE COVER 2.png" alt="Modern Style Magazine Cover" class="masonry-img">
+            <div class="masonry-overlay">
+              <div class="zoom-icon-circle"><i data-lucide="maximize-2"></i></div>
+            </div>
+          </div>
+          <div class="masonry-info">
+            <span class="masonry-category-badge">Brand & Print</span>
+            <h3>Modern Style Magazine Cover</h3>
+            <span class="masonry-tech-tag">InDesign / Photoshop</span>
+          </div>
+        </div>
+
+        <!-- Item 5: MOCKUP -->
+        <div class="masonry-item product-3d" data-index="4" data-category="product-3d" data-title="App UI/UX Mockup" data-description="High-fidelity interface screens demonstrating user flow and clean modern dark aesthetics." data-software="Figma / Photoshop" data-img="assets/MOCKUP.png">
+          <div class="masonry-img-wrapper">
+            <img src="assets/MOCKUP.png" alt="App UI/UX Mockup" class="masonry-img">
+            <div class="masonry-overlay">
+              <div class="zoom-icon-circle"><i data-lucide="maximize-2"></i></div>
+            </div>
+          </div>
+          <div class="masonry-info">
+            <span class="masonry-category-badge">Product & 3D</span>
+            <h3>App UI/UX Mockup</h3>
+            <span class="masonry-tech-tag">Figma / Photoshop</span>
+          </div>
+        </div>
+
+        <!-- Item 6: NIssan -->
+        <div class="masonry-item product-3d" data-index="5" data-category="product-3d" data-title="Nissan Campaign Concept" data-description="Atmospheric product marketing visual designed for campaign promotion, combining lighting and gradients." data-software="Photoshop / 3D Render" data-img="assets/NIssan.png">
+          <div class="masonry-img-wrapper">
+            <img src="assets/NIssan.png" alt="Nissan Campaign Concept" class="masonry-img">
+            <div class="masonry-overlay">
+              <div class="zoom-icon-circle"><i data-lucide="maximize-2"></i></div>
+            </div>
+          </div>
+          <div class="masonry-info">
+            <span class="masonry-category-badge">Product & 3D</span>
+            <h3>Nissan Campaign Concept</h3>
+            <span class="masonry-tech-tag">Photoshop / 3D Render</span>
+          </div>
+        </div>
+
+        <!-- Item 7: burger post -->
+        <div class="masonry-item social-marketing" data-index="6" data-category="social-marketing" data-title="Gourmet Burger Social Ad" data-description="Mouth-watering commercial design with typographic layouts customized for digital promotions." data-software="Photoshop" data-img="assets/burger post.png">
+          <div class="masonry-img-wrapper">
+            <img src="assets/burger post.png" alt="Gourmet Burger Social Ad" class="masonry-img">
+            <div class="masonry-overlay">
+              <div class="zoom-icon-circle"><i data-lucide="maximize-2"></i></div>
+            </div>
+          </div>
+          <div class="masonry-info">
+            <span class="masonry-category-badge">Social & Marketing</span>
+            <h3>Gourmet Burger Social Ad</h3>
+            <span class="masonry-tech-tag">Photoshop</span>
+          </div>
+        </div>
+
+        <!-- Item 8: business cards -->
+        <div class="masonry-item brand-print" data-index="7" data-category="brand-print" data-title="Corporate Business Cards" data-description="Premium identity cards using clean grids, custom typography alignment, and corporate guidelines." data-software="Illustrator" data-img="assets/business cards.png">
+          <div class="masonry-img-wrapper">
+            <img src="assets/business cards.png" alt="Corporate Business Cards" class="masonry-img">
+            <div class="masonry-overlay">
+              <div class="zoom-icon-circle"><i data-lucide="maximize-2"></i></div>
+            </div>
+          </div>
+          <div class="masonry-info">
+            <span class="masonry-category-badge">Brand & Print</span>
+            <h3>Corporate Business Cards</h3>
+            <span class="masonry-tech-tag">Illustrator</span>
+          </div>
+        </div>
+
+        <!-- Item 9: BILL BOARD -->
+        <div class="masonry-item brand-print" data-index="8" data-category="brand-print" data-title="Creative Billboard Design" data-description="Large-format print design for out-of-home advertising, maintaining clean layout readable from a distance." data-software="Photoshop / Illustrator" data-img="assets/BILL BOARD.png">
+          <div class="masonry-img-wrapper">
+            <img src="assets/BILL BOARD.png" alt="Creative Billboard Design" class="masonry-img">
+            <div class="masonry-overlay">
+              <div class="zoom-icon-circle"><i data-lucide="maximize-2"></i></div>
+            </div>
+          </div>
+          <div class="masonry-info">
+            <span class="masonry-category-badge">Brand & Print</span>
+            <h3>Creative Billboard Design</h3>
+            <span class="masonry-tech-tag">Photoshop / Illustrator</span>
+          </div>
+        </div>
+
+        <!-- Item 10: COHOME DECORE -->
+        <div class="masonry-item brand-print" data-index="9" data-category="brand-print" data-title="CoHome Decore Identity" data-description="Brand mark development and stationery styling for an interior and decor boutique." data-software="Illustrator" data-img="assets/COHOME DECORE.png">
+          <div class="masonry-img-wrapper">
+            <img src="assets/COHOME DECORE.png" alt="CoHome Decore Identity" class="masonry-img">
+            <div class="masonry-overlay">
+              <div class="zoom-icon-circle"><i data-lucide="maximize-2"></i></div>
+            </div>
+          </div>
+          <div class="masonry-info">
+            <span class="masonry-category-badge">Brand & Print</span>
+            <h3>CoHome Decore Identity</h3>
+            <span class="masonry-tech-tag">Illustrator</span>
+          </div>
+        </div>
+
+        <!-- Item 11: HD -->
+        <div class="masonry-item social-marketing" data-index="10" data-category="social-marketing" data-title="High Definition Web Banner" data-description="Sleek, atmospheric product landing visual, optimizing contrast and visual placement." data-software="Photoshop" data-img="assets/HD.png">
+          <div class="masonry-img-wrapper">
+            <img src="assets/HD.png" alt="High Definition Web Banner" class="masonry-img">
+            <div class="masonry-overlay">
+              <div class="zoom-icon-circle"><i data-lucide="maximize-2"></i></div>
+            </div>
+          </div>
+          <div class="masonry-info">
+            <span class="masonry-category-badge">Social & Marketing</span>
+            <h3>High Definition Web Banner</h3>
+            <span class="masonry-tech-tag">Photoshop</span>
+          </div>
+        </div>
+
+        <!-- Item 12: gym flyer -->
+        <div class="masonry-item brand-print" data-index="11" data-category="brand-print" data-title="Fitness Club Flyer" data-description="Energetic marketing flyer layout utilizing strong typographic weights and dynamic sports layouts." data-software="CorelDraw / Photoshop" data-img="assets/gym flyer.png">
+          <div class="masonry-img-wrapper">
+            <img src="assets/gym flyer.png" alt="Fitness Club Flyer" class="masonry-img">
+            <div class="masonry-overlay">
+              <div class="zoom-icon-circle"><i data-lucide="maximize-2"></i></div>
+            </div>
+          </div>
+          <div class="masonry-info">
+            <span class="masonry-category-badge">Brand & Print</span>
+            <h3>Fitness Club Flyer</h3>
+            <span class="masonry-tech-tag">CorelDraw / Photoshop</span>
+          </div>
+        </div>
+
+        <!-- Item 13: gym -->
+        <div class="masonry-item social-marketing" data-index="12" data-category="social-marketing" data-title="Iron Gym Social Post" data-description="High-motivational content piece mixing background grit, heavy shadow grading, and custom text styles." data-software="Photoshop" data-img="assets/gym.png">
+          <div class="masonry-img-wrapper">
+            <img src="assets/gym.png" alt="Iron Gym Social Post" class="masonry-img">
+            <div class="masonry-overlay">
+              <div class="zoom-icon-circle"><i data-lucide="maximize-2"></i></div>
+            </div>
+          </div>
+          <div class="masonry-info">
+            <span class="masonry-category-badge">Social & Marketing</span>
+            <h3>Iron Gym Social Post</h3>
+            <span class="masonry-tech-tag">Photoshop</span>
+          </div>
+        </div>
+
+        <!-- Item 14: red shoes -->
+        <div class="masonry-item product-3d" data-index="13" data-category="product-3d" data-title="Red Sneakers Ad Graphic" data-description="Product commercial poster showcasing shoes on high-contrast studio elements with clean visual paths." data-software="Photoshop" data-img="assets/red shoes.png">
+          <div class="masonry-img-wrapper">
+            <img src="assets/red shoes.png" alt="Red Sneakers Ad Graphic" class="masonry-img">
+            <div class="masonry-overlay">
+              <div class="zoom-icon-circle"><i data-lucide="maximize-2"></i></div>
+            </div>
+          </div>
+          <div class="masonry-info">
+            <span class="masonry-category-badge">Product & 3D</span>
+            <h3>Red Sneakers Ad Graphic</h3>
+            <span class="masonry-tech-tag">Photoshop</span>
+          </div>
+        </div>
+
+        <!-- Item 15: shoes -->
+        <div class="masonry-item product-3d" data-index="14" data-category="product-3d" data-title="Classic Leather Footwear" data-description="Commercial product shot edit focusing on details, material texture grading, and shadow balance." data-software="Photoshop" data-img="assets/shoes.png">
+          <div class="masonry-img-wrapper">
+            <img src="assets/shoes.png" alt="Classic Leather Footwear" class="masonry-img">
+            <div class="masonry-overlay">
+              <div class="zoom-icon-circle"><i data-lucide="maximize-2"></i></div>
+            </div>
+          </div>
+          <div class="masonry-info">
+            <span class="masonry-category-badge">Product & 3D</span>
+            <h3>Classic Leather Footwear</h3>
+            <span class="masonry-tech-tag">Photoshop</span>
+          </div>
+        </div>
+
+        <!-- Item 16: shoes with orange backsround -->
+        <div class="masonry-item product-3d" data-index="15" data-category="product-3d" data-title="Orange Sport Shoes Commercial" data-description="High-energy product visual combining motion splash elements and matching background lighting." data-software="Photoshop" data-img="assets/shoes with orange backsround.png">
+          <div class="masonry-img-wrapper">
+            <img src="assets/shoes with orange backsround.png" alt="Orange Sport Shoes Commercial" class="masonry-img">
+            <div class="masonry-overlay">
+              <div class="zoom-icon-circle"><i data-lucide="maximize-2"></i></div>
+            </div>
+          </div>
+          <div class="masonry-info">
+            <span class="masonry-category-badge">Product & 3D</span>
+            <h3>Orange Sport Shoes Commercial</h3>
+            <span class="masonry-tech-tag">Photoshop</span>
+          </div>
+        </div>
+
+        <!-- Item 17: thumbnail -->
+        <div class="masonry-item social-marketing" data-index="16" data-category="social-marketing" data-title="High-CTR Video Thumbnail" data-description="Custom YouTube cover combining bright neon typography highlights and portrait visual pop." data-software="Photoshop" data-img="assets/thumbnail.png">
+          <div class="masonry-img-wrapper">
+            <img src="assets/thumbnail.png" alt="High-CTR Video Thumbnail" class="masonry-img">
+            <div class="masonry-overlay">
+              <div class="zoom-icon-circle"><i data-lucide="maximize-2"></i></div>
+            </div>
+          </div>
+          <div class="masonry-info">
+            <span class="masonry-category-badge">Social & Marketing</span>
+            <h3>High-CTR Video Thumbnail</h3>
+            <span class="masonry-tech-tag">Photoshop</span>
+          </div>
+        </div>
+
+        <!-- Item 18: vibe girl -->
+        <div class="masonry-item social-marketing" data-index="17" data-category="social-marketing" data-title="Neon Cyberpunk Portrait Edit" data-description="Experimental photo manipulation creating dynamic neon light beams and futuristic styling overlays." data-software="Photoshop" data-img="assets/vibe girl.jpg">
+          <div class="masonry-img-wrapper">
+            <img src="assets/vibe girl.jpg" alt="Neon Cyberpunk Portrait Edit" class="masonry-img">
+            <div class="masonry-overlay">
+              <div class="zoom-icon-circle"><i data-lucide="maximize-2"></i></div>
+            </div>
+          </div>
+          <div class="masonry-info">
+            <span class="masonry-category-badge">Social & Marketing</span>
+            <h3>Neon Cyberpunk Portrait Edit</h3>
+            <span class="masonry-tech-tag">Photoshop</span>
+          </div>
+        </div>
+
+        <!-- Item 19: IMG-20240424-WA0000 -->
+        <div class="masonry-item social-marketing" data-index="18" data-category="social-marketing" data-title="Brand Showcase Post" data-description="Sleek branding post showcasing product benefits with clean visual flow." data-software="Photoshop" data-img="assets/IMG-20240424-WA0000.jpg">
+          <div class="masonry-img-wrapper">
+            <img src="assets/IMG-20240424-WA0000.jpg" alt="Brand Showcase Post" class="masonry-img">
+            <div class="masonry-overlay">
+              <div class="zoom-icon-circle"><i data-lucide="maximize-2"></i></div>
+            </div>
+          </div>
+          <div class="masonry-info">
+            <span class="masonry-category-badge">Social & Marketing</span>
+            <h3>Brand Showcase Post</h3>
+            <span class="masonry-tech-tag">Photoshop</span>
+          </div>
+        </div>
+
+        <!-- Item 20: IMG-20240502-WA0000 -->
+        <div class="masonry-item social-marketing" data-index="19" data-category="social-marketing" data-title="Minimalist Ad Creative" data-description="Optimized digital marketing post focusing on a single, high-contrast core offer." data-software="Photoshop" data-img="assets/IMG-20240502-WA0000.jpg">
+          <div class="masonry-img-wrapper">
+            <img src="assets/IMG-20240502-WA0000.jpg" alt="Minimalist Ad Creative" class="masonry-img">
+            <div class="masonry-overlay">
+              <div class="zoom-icon-circle"><i data-lucide="maximize-2"></i></div>
+            </div>
+          </div>
+          <div class="masonry-info">
+            <span class="masonry-category-badge">Social & Marketing</span>
+            <h3>Minimalist Ad Creative</h3>
+            <span class="masonry-tech-tag">Photoshop</span>
+          </div>
+        </div>
+
+        <!-- Item 21: IMG-20240523-WA0000 -->
+        <div class="masonry-item social-marketing" data-index="20" data-category="social-marketing" data-title="Product Spotlight Card" data-description="Marketing card designed to convey feature benefits clearly with matching highlight colors." data-software="Illustrator" data-img="assets/IMG-20240523-WA0000.jpg">
+          <div class="masonry-img-wrapper">
+            <img src="assets/IMG-20240523-WA0000.jpg" alt="Product Spotlight Card" class="masonry-img">
+            <div class="masonry-overlay">
+              <div class="zoom-icon-circle"><i data-lucide="maximize-2"></i></div>
+            </div>
+          </div>
+          <div class="masonry-info">
+            <span class="masonry-category-badge">Social & Marketing</span>
+            <h3>Product Spotlight Card</h3>
+            <span class="masonry-tech-tag">Illustrator</span>
+          </div>
+        </div>
+
+        <!-- Item 22: IMG-20240701-WA0003 -->
+        <div class="masonry-item social-marketing" data-index="21" data-category="social-marketing" data-title="Seasonal Sales Poster" data-description="Creative campaign ad featuring high-impact visual themes and promo details." data-software="Photoshop" data-img="assets/IMG-20240701-WA0003.jpg">
+          <div class="masonry-img-wrapper">
+            <img src="assets/IMG-20240701-WA0003.jpg" alt="Seasonal Sales Poster" class="masonry-img">
+            <div class="masonry-overlay">
+              <div class="zoom-icon-circle"><i data-lucide="maximize-2"></i></div>
+            </div>
+          </div>
+          <div class="masonry-info">
+            <span class="masonry-category-badge">Social & Marketing</span>
+            <h3>Seasonal Sales Poster</h3>
+            <span class="masonry-tech-tag">Photoshop</span>
+          </div>
+        </div>
+
+        <!-- Item 23: IMG-20240705-WA0002 -->
+        <div class="masonry-item social-marketing" data-index="22" data-category="social-marketing" data-title="Minimal Vector Asset" data-description="Custom illustration element designed for scalable digital applications." data-software="Illustrator" data-img="assets/IMG-20240705-WA0002.jpg">
+          <div class="masonry-img-wrapper">
+            <img src="assets/IMG-20240705-WA0002.jpg" alt="Minimal Vector Asset" class="masonry-img">
+            <div class="masonry-overlay">
+              <div class="zoom-icon-circle"><i data-lucide="maximize-2"></i></div>
+            </div>
+          </div>
+          <div class="masonry-info">
+            <span class="masonry-category-badge">Social & Marketing</span>
+            <h3>Minimal Vector Asset</h3>
+            <span class="masonry-tech-tag">Illustrator</span>
+          </div>
+        </div>
+
+        <!-- Item 24: IMG-20240708-WA0001 -->
+        <div class="masonry-item social-marketing" data-index="23" data-category="social-marketing" data-title="Typography Poster" data-description="A bold composition testing text grids, alignment, and modern typographic hierarchies." data-software="Illustrator" data-img="assets/IMG-20240708-WA0001.jpg">
+          <div class="masonry-img-wrapper">
+            <img src="assets/IMG-20240708-WA0001.jpg" alt="Typography Poster" class="masonry-img">
+            <div class="masonry-overlay">
+              <div class="zoom-icon-circle"><i data-lucide="maximize-2"></i></div>
+            </div>
+          </div>
+          <div class="masonry-info">
+            <span class="masonry-category-badge">Social & Marketing</span>
+            <h3>Typography Poster</h3>
+            <span class="masonry-tech-tag">Illustrator</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="lightbox-modal">
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close Lightbox">
+        <i data-lucide="x"></i>
+      </button>
+      
+      <button class="lightbox-btn btn-prev" id="lightbox-prev" aria-label="Previous Image">
+        <i data-lucide="chevron-left"></i>
+      </button>
+      
+      <div class="lightbox-container">
+        <!-- Exact aspect ratio is preserved via styles.css containing object-fit: contain -->
+        <img src="" alt="Expanded View" class="lightbox-img" id="lightbox-img">
+      </div>
+      
+      <button class="lightbox-btn btn-next" id="lightbox-next" aria-label="Next Image">
+        <i data-lucide="chevron-right"></i>
+      </button>
+      
+      <div class="lightbox-details">
+        <h3 id="lightbox-title">Project Title</h3>
+        <p id="lightbox-description">Project description goes here...</p>
+        <span class="masonry-tech-tag lightbox-tech-tag" id="lightbox-software">Tools Used</span>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+    <section class="influencer-cta">
+      <div class="contact-container">
+        <h2 class="contact-title text-gradient" style="font-size: 2.8rem; margin-bottom: 1rem;">Let's Deploy Similar Visual Engines</h2>
+        <p class="contact-text" style="max-width: 550px; margin: 0 auto 2.5rem auto;">
+          Whether it is building interactive digital interfaces, modeling product visuals, or crafting brand layouts, let's create something together.
+        </p>
+        <div class="contact-methods">
+          <a href="mailto:tanejaakshit9@gmail.com" class="contact-btn email-btn">
+            <i data-lucide="mail" style="width: 18px; height: 18px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i> Email Me
+          </a>
+          <a href="https://www.linkedin.com/in/akshittaneja05/" target="_blank" rel="noopener" class="contact-btn linkedin-btn">
+            <i data-lucide="linkedin" style="width: 18px; height: 18px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i> Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-bottom" style="margin-top: 4rem; padding-bottom: 2rem; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 2rem;">
+    <p>&copy; 2026 Akshit. Designed and built with premium layouts.</p>
+  </footer>
+
+  <!-- Interactivity Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Initialize Lucide Icons
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      }
+
+      // Filter logic
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const masonryItems = document.querySelectorAll('.masonry-item');
+      let currentFilter = 'all';
+
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Toggle active class on buttons
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          currentFilter = btn.getAttribute('data-filter');
+
+          // Show/Hide items based on filter
+          masonryItems.forEach(item => {
+            if (currentFilter === 'all' || item.classList.contains(currentFilter)) {
+              item.style.display = 'inline-block';
+              item.classList.add('visible-filtered');
+            } else {
+              item.style.display = 'none';
+              item.classList.remove('visible-filtered');
+            }
+          });
+        });
+      });
+
+      // Mark all items as visible initially
+      masonryItems.forEach(item => item.classList.add('visible-filtered'));
+
+      // Lightbox functionality
+      const lightboxModal = document.getElementById('lightbox-modal');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxTitle = document.getElementById('lightbox-title');
+      const lightboxDescription = document.getElementById('lightbox-description');
+      const lightboxSoftware = document.getElementById('lightbox-software');
+      const closeBtn = document.getElementById('lightbox-close');
+      const prevBtn = document.getElementById('lightbox-prev');
+      const nextBtn = document.getElementById('lightbox-next');
+      
+      let currentActiveIndex = 0;
+      let visibleItemsList = [];
+
+      // Open Lightbox
+      masonryItems.forEach(item => {
+        item.addEventListener('click', () => {
+          // Re-calculate the list of items visible under the current filter
+          visibleItemsList = Array.from(masonryItems).filter(i => 
+            currentFilter === 'all' || i.classList.contains(currentFilter)
+          );
+
+          // Find the index of the clicked item inside the visible items list
+          currentActiveIndex = visibleItemsList.indexOf(item);
+          updateLightboxContent();
+
+          // Open modal
+          lightboxModal.classList.add('active');
+          document.body.style.overflow = 'hidden'; // Stop scrolling
+        });
+      });
+
+      // Close Lightbox
+      function closeLightbox() {
+        lightboxModal.classList.remove('active');
+        document.body.style.overflow = ''; // Resume scrolling
+      }
+
+      closeBtn.addEventListener('click', closeLightbox);
+
+      // Click outside to close
+      lightboxModal.addEventListener('click', (e) => {
+        if (e.target === lightboxModal || e.target === document.querySelector('.lightbox-container')) {
+          closeLightbox();
+        }
+      });
+
+      // Navigation handler
+      function navigateLightbox(direction) {
+        if (visibleItemsList.length <= 1) return;
+
+        if (direction === 'next') {
+          currentActiveIndex = (currentActiveIndex + 1) % visibleItemsList.length;
+        } else {
+          currentActiveIndex = (currentActiveIndex - 1 + visibleItemsList.length) % visibleItemsList.length;
+        }
+        updateLightboxContent();
+      }
+
+      function updateLightboxContent() {
+        const activeItem = visibleItemsList[currentActiveIndex];
+        if (!activeItem) return;
+
+        // Populate Lightbox fields
+        lightboxImg.src = activeItem.getAttribute('data-img');
+        lightboxImg.alt = activeItem.getAttribute('data-title');
+        lightboxTitle.textContent = activeItem.getAttribute('data-title');
+        lightboxDescription.textContent = activeItem.getAttribute('data-description');
+        lightboxSoftware.textContent = activeItem.getAttribute('data-software');
+      }
+
+      prevBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        navigateLightbox('prev');
+      });
+
+      nextBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        navigateLightbox('next');
+      });
+
+      // Keyboard support
+      document.addEventListener('keydown', (e) => {
+        if (!lightboxModal.classList.contains('active')) return;
+
+        if (e.key === 'Escape') {
+          closeLightbox();
+        } else if (e.key === 'ArrowRight') {
+          navigateLightbox('next');
+        } else if (e.key === 'ArrowLeft') {
+          navigateLightbox('prev');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

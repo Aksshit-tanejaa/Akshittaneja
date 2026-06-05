@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akshit | Growth & Marketing Operator</title>
+  <meta name="description" content="Portfolio of Akshit, a Growth & Marketing Operator building scalable marketing systems, paid media campaigns, operational automations, and no-code solutions.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Background Layer -->
+  <div class="bg-noise"></div>
+  <div class="bg-glow" id="mouse-glow"></div>
+  <canvas id="particle-canvas" class="global-particles"></canvas>
+  
+  <!-- Animated Background Flares -->
+  <div class="orange-flares-container">
+    <div class="flare flare-1"></div>
+    <div class="flare flare-2"></div>
+    <div class="flare flare-3"></div>
+  </div>
+  
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-accent">▲</span> AKSHIT
+      </a>
+      <nav class="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#what-i-build" class="nav-link">Services</a>
+        <a href="#featured-work" class="nav-link">Work</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Journey</a>
+        <a href="#leadership" class="nav-link">Impact</a>
+        <a href="#process" class="nav-link">Process</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-secondary btn-sm">Let's Talk</a>
+      </div>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-grid-overlay"></div>
+      
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span> Available for Growth Roles
+          </div>
+          
+          <h1 class="hero-title reveal-text">
+            Hi, I'm <span class="text-gradient">Akshit</span>.
+          </h1>
+          
+          <h2 class="hero-subtitle">
+            I build <span class="keyword-rotator" id="keyword-rotator">Growth Marketing</span>
+          </h2>
+          
+          <p class="hero-description reveal-text-delayed">
+            I am a Growth Operator and Marketing Technologist who builds data-driven growth systems, automates manual workflows, and executes performance marketing campaigns that deliver measurable business results.
+          </p>
+          
+          <div class="hero-tags">
+            <span>Marketing</span> • <span>Performance</span> • <span>Automation</span> • <span>Business Growth</span>
+          </div>
+          
+          <div class="hero-actions">
+            <a href="#featured-work" class="btn btn-primary">
+              Explore My Work <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="https://docs.google.com/document/d/1AxNX2lyAj-68sQIteo2ETdor7ercWpg0/edit?usp=sharing&ouid=115959276039089935461&rtpof=true&sd=true" target="_blank" rel="noopener" class="btn btn-outline" id="resume-download-btn">
+              Download Resume <i data-lucide="download"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Floating Visual Cards -->
+        <div class="hero-visual">
+          <div class="floating-card card-1">
+            <div class="card-icon"><i data-lucide="trending-up"></i></div>
+            <div class="card-info">
+              <span class="card-label">Conversion Rate</span>
+              <span class="card-val">+240%</span>
+            </div>
+          </div>
+          <div class="floating-card card-2">
+            <div class="card-icon"><i data-lucide="cpu"></i></div>
+            <div class="card-info">
+              <span class="card-label">Automations Active</span>
+              <span class="card-val">45+ Runs/Hr</span>
+            </div>
+          </div>
+          <div class="floating-card card-3">
+            <div class="card-icon"><i data-lucide="users"></i></div>
+            <div class="card-info">
+              <span class="card-label">Pipeline Sourced</span>
+              <span class="card-val">$1.2M+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="scroll-indicator">
+        <span class="mouse-scroll"></span>
+        <span class="scroll-text">Scroll to explore</span>
+      </div>
+    </section>
+
+    <!-- Section 2: Interactive About Me Timeline -->
+    <section id="about" class="about-section">
+      <div class="section-header">
+        <h2 class="section-title">Evolution of an Operator</h2>
+        <p class="section-subtitle">How different disciplines merged into a tech-driven marketer.</p>
+      </div>
+      
+      <div class="timeline-container">
+        <div class="timeline-line">
+          <div class="timeline-progress" id="about-progress"></div>
+        </div>
+        
+        <div class="timeline-cards">
+          <!-- Card 1 -->
+          <div class="timeline-card-wrapper" data-step="1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="card-step">01</div>
+              <h3>Student</h3>
+              <p>Acquiring foundational business principles, market analysis frameworks, and understanding behavioral psychology.</p>
+              <div class="card-tags">
+                <span>Learning</span><span>Academics</span><span>Curiosity</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="timeline-card-wrapper" data-step="2">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="card-step">02</div>
+              <h3>Designer</h3>
+              <p>Translating ideas into visuals. Mastering typography, layouts, hierarchy, and understanding modern UX patterns that drive conversion.</p>
+              <div style="margin-bottom: 1.2rem;">
+                <a href="design.html" class="project-link" style="font-size: 0.85rem; color: var(--primary-color); font-weight: 555; display: inline-flex; align-items: center; gap: 0.2rem;">
+                  Explore Design Portfolio <i data-lucide="arrow-right" style="width: 14px; height: 14px; display: inline-block; vertical-align: middle;"></i>
+                </a>
+              </div>
+              <div class="card-tags">
+                <span>Photoshop</span><span>Illustrator</span><span>InDesign</span><span>CorelDraw</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Card 3 -->
+          <div class="timeline-card-wrapper" data-step="3">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="card-step">03</div>
+              <h3>Marketer</h3>
+              <p>Running paid campaigns, drafting landing page copy, optimizing channels, and developing content strategy that moves metrics.</p>
+              <div class="card-tags">
+                <span>Paid Ads</span><span>Copywriting</span><span>SEO</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Card 4 -->
+          <div class="timeline-card-wrapper" data-step="4">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="card-step">04</div>
+              <h3>Growth Operator</h3>
+              <p>Connecting product, marketing, and data. Running rapid growth sprints, data-backed funnel experiments, and attribution tracking.</p>
+              <div class="card-tags">
+                <span>A/B Testing</span><span>Funnel Optimization</span><span>Data</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Card 5 -->
+          <div class="timeline-card-wrapper" data-step="5">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="card-step">05</div>
+              <h3>Builder</h3>
+              <p>Deploying no-code stacks, integrations, automated pipelines, and custom web assets to execute marketing ideas with zero dependency.</p>
+              <div class="card-tags">
+                <span>Antigravity</span><span>Telegram Bot API</span><span>GitHub</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: What I Build -->
+    <section id="what-i-build" class="build-section">
+      <div class="section-header">
+        <h2 class="section-title">Core Capabilities</h2>
+        <p class="section-subtitle">Bridging the gap between creative marketing and engineering workflows.</p>
+      </div>
+      
+      <div class="build-grid">
+        <!-- Card 1 -->
+        <div class="build-card tilt-target">
+          <div class="build-card-glow"></div>
+          <div class="build-icon"><i data-lucide="target"></i></div>
+          <h3>Growth Marketing</h3>
+          <p>Full-funnel campaigns designed to increase brand reach, drive organic traffic, and lift user engagement through data-driven content engines.</p>
+          <ul>
+            <li>SEO & Content Strategy</li>
+            <li>Funnel Optimization</li>
+            <li>Retention Mechanics</li>
+          </ul>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="build-card tilt-target">
+          <div class="build-card-glow"></div>
+          <div class="build-icon"><i data-lucide="bar-chart-3"></i></div>
+          <h3>Performance Marketing</h3>
+          <p>ROI-focused paid acquisition pipelines. Budget allocation, audience targeting, and high-converting ad creative loops that lower CAC.</p>
+          <ul>
+            <li>Meta, Google, & LinkedIn Ads</li>
+            <li>Custom Conversion Tracking</li>
+            <li>Creative Testing Frameworks</li>
+          </ul>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="build-card tilt-target">
+          <div class="build-card-glow"></div>
+          <div class="build-icon"><i data-lucide="zap"></i></div>
+          <h3>Automation</h3>
+          <p>Workflow optimization that cuts down operational overhead. Syncing CRMs, automated lead routers, and personalized notifications.</p>
+          <ul>
+            <li>Make / Zapier Architecture</li>
+            <li>Custom Webhooks & APIs</li>
+            <li>Database & CRM Syncs</li>
+          </ul>
+        </div>
+        
+        <!-- Card 4 -->
+        <div class="build-card tilt-target">
+          <div class="build-card-glow"></div>
+          <div class="build-icon"><i data-lucide="briefcase"></i></div>
+          <h3>Business Development</h3>
+          <p>Systemized B2B lead generation. Automated prospect list building, outbound sequencing, and qualification filters that scale pipelines.</p>
+          <ul>
+            <li>Prospect Data Extraction</li>
+            <li>Cold Outreach Automation</li>
+            <li>CRM Deal Pipelines</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Featured Work (Horizontal Scroll Container) -->
+    <section id="featured-work" class="work-section-scroll-container">
+      <div class="work-sticky-wrapper">
+        <div class="work-section-header">
+          <div>
+            <h2 class="section-title">Featured Work</h2>
+            <p class="section-subtitle">Selected growth engines, marketing assets, and automations.</p>
+          </div>
+          <div class="horizontal-scroll-hint">
+            <span>Scroll Down to Pan</span>
+            <i data-lucide="arrow-right" class="arrow-bounce"></i>
+          </div>
+        </div>
+        
+        <div class="work-horizontal-track" id="work-track">
+          
+          <!-- Project 1: CHC Handlooms (Assembly on Scroll) -->
+          <div class="work-project-card project-chc">
+            <div class="project-details">
+              <div class="project-num">01</div>
+              <span class="project-category">E-Commerce Launch & Workflow Automation</span>
+              <h3><a href="http://chchandloom.in/" target="_blank" rel="noopener" class="project-link stretched-link">CHC Handlooms <i data-lucide="external-link" style="width: 18px; height: 18px; display: inline-block; vertical-align: middle; margin-left: 6px; opacity: 0.7;"></i></a></h3>
+              <p>Conceptualised and deployed an inquiry-based e-commerce platform from zero. Integrated a custom real-time Telegram Bot syncing product cataloging with full inventory control for the operations team.</p>
+              
+              <div class="project-metrics">
+                <div class="metric-box">
+                  <span class="metric-num">400+</span>
+                  <span class="metric-lbl">B2B Inquiries</span>
+                </div>
+                <div class="metric-box">
+                  <span class="metric-num">400+ Hrs</span>
+                  <span class="metric-lbl">Saved Annually</span>
+                </div>
+              </div>
+              
+              <div class="project-tech">
+                <span>Antigravity</span><span>Telegram Bot API</span><span>GitHub</span>
+              </div>
+            </div>
+            
+            <div class="project-visual-wrapper" id="chc-visual-container">
+              <div class="chc-assembly-stage">
+                <!-- Laptop Mockup -->
+                <div class="mockup laptop-mockup assemble-element" data-translate-x="-80" data-opacity="0">
+                  <div class="laptop-screen">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='500' viewBox='0 0 800 500' style='background:%230A0A0A;'><rect width='800' height='500' fill='%23111111'/><text x='50%25' y='45%25' font-family='sans-serif' font-weight='bold' font-size='32' fill='%23F5F5F5' dominant-baseline='middle' text-anchor='middle'>CHC Handlooms</text><text x='50%25' y='55%25' font-family='sans-serif' font-size='18' fill='%23FF6B00' dominant-baseline='middle' text-anchor='middle'>Premium Heritage Fabrics Store</text></svg>" alt="CHC Handlooms Website Desktop" class="mockup-img">
+                  </div>
+                  <div class="laptop-base"></div>
+                </div>
+                
+                <!-- Phone Mockup -->
+                <div class="mockup phone-mockup assemble-element" data-translate-x="80" data-opacity="0">
+                  <div class="phone-speaker"></div>
+                  <div class="phone-screen">
+                    <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='360' height='740' viewBox='0 0 360 740' style='background:%23222222;'><rect width='360' height='740' fill='%230A0A0A'/><circle cx='180' cy='150' r='50' fill='%23FF6B00' opacity='0.2'/><text x='50%25' y='320' font-family='sans-serif' font-weight='bold' font-size='22' fill='%23f5f5f5' text-anchor='middle'>Telegram Bot</text><text x='50%25' y='360' font-family='sans-serif' font-size='14' fill='%238A8A8A' text-anchor='middle'>Order Dispatched</text><rect x='40' y='420' width='280' height='80' rx='10' fill='%23111111'/><text x='60' y='465' font-family='sans-serif' font-size='12' fill='%238A8A8A'>Customer ID: %2392482</text></svg>" alt="Telegram Dispatched Bot" class="mockup-img">
+                  </div>
+                  <div class="phone-home-btn"></div>
+                </div>
+                
+                <!-- Diagram Node -->
+                <div class="diagram-node assemble-element" data-translate-y="80" data-opacity="0">
+                  <div class="diagram-pill">Shopify Order</div>
+                  <div class="diagram-arrow">➔</div>
+                  <div class="diagram-pill accent">Telegram Bot Alert</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 2: Influencer Campaigns (Analytics Dashboard Counters) -->
+          <div class="work-project-card project-influencer">
+            <div class="project-details">
+              <div class="project-num">02</div>
+              <span class="project-category">Influencer Marketing & Performance Tracking</span>
+              <h3><a href="influencer.html" class="project-link stretched-link">Influencer Measurement Framework <i data-lucide="external-link" style="width: 18px; height: 18px; display: inline-block; vertical-align: middle; margin-left: 6px; opacity: 0.7;"></i></a></h3>
+              <p>Designed and operationalised a 12-KPI creator scorecard tracking engagement authenticity, sentiment, and estimated ROI across multiple campaign cycles.</p>
+              
+              <div class="project-metrics">
+                <div class="metric-box">
+                  <span class="metric-num">-38%</span>
+                  <span class="metric-lbl">Cost-Per-Engagement</span>
+                </div>
+                <div class="metric-box">
+                  <span class="metric-num">2.1x</span>
+                  <span class="metric-lbl">Campaign ROI Lift</span>
+                </div>
+              </div>
+              
+              <div class="project-tech">
+                <span>Meta Ads Manager</span><span>GA4</span><span>A/B Testing</span>
+              </div>
+            </div>
+            
+            <div class="project-visual-wrapper">
+              <div class="dashboard-mockup">
+                <div class="db-header">
+                  <div class="db-dot red"></div>
+                  <div class="db-dot yellow"></div>
+                  <div class="db-dot green"></div>
+                  <span class="db-title">Influencer Campaign Dashboard</span>
+                </div>
+                <div class="db-grid">
+                  <div class="db-stat-card">
+                    <h4>Creator Onboarded</h4>
+                    <div class="db-counter text-gradient" data-target="142">0</div>
+                    <span class="db-trend">▲ +24% this month</span>
+                  </div>
+                  <div class="db-stat-card">
+                    <h4>Conversions</h4>
+                    <div class="db-counter text-gradient" data-target="3840">0</div>
+                    <span class="db-trend">▲ +48% from campaign</span>
+                  </div>
+                  <div class="db-chart-card">
+                    <h4>Campaign ROI Trend</h4>
+                    <div class="db-bar-chart">
+                      <div class="chart-bar" style="--height: 35%"><span>3.1x</span></div>
+                      <div class="chart-bar" style="--height: 55%"><span>3.5x</span></div>
+                      <div class="chart-bar" style="--height: 80%"><span>4.2x</span></div>
+                      <div class="chart-bar" style="--height: 60%"><span>3.8x</span></div>
+                      <div class="chart-bar" style="--height: 95%"><span>4.8x</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project 3: Lead Qualification (Interactive Map + Pipeline Flows) -->
+          <div class="work-project-card project-qualification">
+            <div class="project-details">
+              <div class="project-num">03</div>
+              <span class="project-category">B2B Sales Operations & Lead Gen</span>
+              <h3>B2B Lead Qualification Framework</h3>
+              <p>Built a 3-tier Hot/Warm/Cold B2B prospecting system for Dubai, Germany, and European markets. Leveraged buyer intelligence data to qualify prospects and co-develop tailored pitch decks.</p>
+              
+              <div class="project-metrics">
+                <div class="metric-box">
+                  <span class="metric-num">200+</span>
+                  <span class="metric-lbl">B2B Leads Qualified</span>
+                </div>
+                <div class="metric-box">
+                  <span class="metric-num">60%</span>
+                  <span class="metric-lbl">Faster Pitch Prep</span>
+                </div>
+              </div>
+              
+              <div class="project-tech">
+                <span>Excel</span><span>B2B Outreach</span><span>Cold Calling</span>
+              </div>
+            </div>
+            
+            <div class="project-visual-wrapper">
+              <div class="map-simulation-container">
+                <div class="world-map-svg-placeholder">
+                  <!-- Custom Minimal World Map Grid -->
+                  <svg viewBox="0 0 800 450" class="world-svg" id="world-map">
+                    <rect width="800" height="450" fill="transparent" />
+                    <!-- Minimal Map Outlines or Points -->
+                    <circle cx="200" cy="180" r="3" fill="#8a8a8a" opacity="0.3" />
+                    <circle cx="210" cy="190" r="2.5" fill="#8a8a8a" opacity="0.3" />
+                    <!-- Dubai Pin -->
+                    <g class="map-pin" id="pin-dubai" data-label="Dubai">
+                      <circle cx="500" cy="220" r="8" fill="#FF6B00" class="ping-circle" />
+                      <circle cx="500" cy="220" r="4" fill="#FF6B00" />
+                    </g>
+                    <!-- Germany Pin -->
+                    <g class="map-pin" id="pin-germany" data-label="Germany">
+                      <circle cx="390" cy="150" r="8" fill="#FF6B00" class="ping-circle" />
+                      <circle cx="390" cy="150" r="4" fill="#FF6B00" />
+                    </g>
+                    <!-- Europe Pin -->
+                    <g class="map-pin" id="pin-europe" data-label="UK & Europe">
+                      <circle cx="370" cy="140" r="8" fill="#FF6B00" class="ping-circle" />
+                      <circle cx="370" cy="140" r="4" fill="#FF6B00" />
+                    </g>
+                    <!-- Middle East Pin -->
+                    <g class="map-pin" id="pin-me" data-label="Middle East">
+                      <circle cx="480" cy="210" r="8" fill="#FF6B00" class="ping-circle" />
+                      <circle cx="480" cy="210" r="4" fill="#FF6B00" />
+                    </g>
+                    
+                    <!-- Dynamic flows to CRM Node -->
+                    <path d="M 370 140 Q 420 320 480 340" fill="transparent" stroke="#FF6B00" stroke-width="1.5" stroke-dasharray="5 5" class="lead-flow-path" id="flow-1"/>
+                    <path d="M 390 150 Q 430 320 480 340" fill="transparent" stroke="#FF6B00" stroke-width="1.5" stroke-dasharray="5 5" class="lead-flow-path" id="flow-2"/>
+                    <path d="M 480 210 Q 480 280 480 340" fill="transparent" stroke="#FF6B00" stroke-width="1.5" stroke-dasharray="5 5" class="lead-flow-path" id="flow-3"/>
+                    <path d="M 500 220 Q 490 280 480 340" fill="transparent" stroke="#FF6B00" stroke-width="1.5" stroke-dasharray="5 5" class="lead-flow-path" id="flow-4"/>
+                    
+                    <!-- Lead Hub -->
+                    <g transform="translate(480, 340)" class="map-crm-node">
+                      <circle cx="0" cy="0" r="18" fill="#111111" stroke="#FF6B00" stroke-width="1.5" />
+                      <rect x="-35" y="-15" width="70" height="30" rx="6" fill="#111111" stroke="#222222" stroke-width="1.5" />
+                      <text x="0" y="5" font-family="sans-serif" font-size="10" font-weight="bold" fill="#f5f5f5" text-anchor="middle">SALES CRM</text>
+                    </g>
+                  </svg>
+                  
+                  <div class="map-overlay-alerts" id="map-alert-box">
+                    <span class="active-alert">Monitoring Global Channels...</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Graphic Design Portfolio -->
+          <div class="work-project-card project-design">
+            <div class="project-details">
+              <div class="project-num">04</div>
+              <span class="project-category">Visual Identity & Creative Production</span>
+              <h3><a href="design.html" class="project-link stretched-link">Graphic Design Portfolio <i data-lucide="external-link" style="width: 18px; height: 18px; display: inline-block; vertical-align: middle; margin-left: 6px; opacity: 0.7;"></i></a></h3>
+              <p>Comprehensive showcase of 24 designs spanning logo branding, editorial layout designs, 3D product modeling and atmospheric renders, print media flyers, and digital marketing creatives.</p>
+              
+              <div class="project-metrics">
+                <div class="metric-box">
+                  <span class="metric-num">24</span>
+                  <span class="metric-lbl">Assets Created</span>
+                </div>
+                <div class="metric-box">
+                  <span class="metric-num">4+</span>
+                  <span class="metric-lbl">Tools Mastered</span>
+                </div>
+              </div>
+              
+              <div class="project-tech">
+                <span>Photoshop</span><span>Illustrator</span><span>InDesign</span><span>CorelDraw</span>
+              </div>
+            </div>
+            
+            <div class="project-visual-wrapper">
+              <div class="design-collage-mockup">
+                <div class="collage-item item-1">
+                  <img src="assets/nike 3d.png" alt="Creative Design Preview" class="collage-img">
+                </div>
+                <div class="collage-item item-2">
+                  <img src="assets/burger post.png" alt="Creative Design Preview" class="collage-img">
+                </div>
+                <div class="collage-item item-3">
+                  <img src="assets/the fold menu.png" alt="Creative Design Preview" class="collage-img">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Skills Ecosystem Orbit -->
+    <section id="skills" class="skills-section">
+      <div class="section-header">
+        <h2 class="section-title">Ecosystem</h2>
+        <p class="section-subtitle">A network of marketing methods, automation tools, and design capabilities.</p>
+      </div>
+      
+      <div class="ecosystem-container">
+        <!-- Interactive Canvas / Dom Nodes Ecosystem -->
+        <div class="ecosystem-stage" id="ecosystem-stage">
+          <!-- Center Node -->
+          <div class="eco-node eco-center">
+            <div class="eco-center-inner">
+              <span class="center-label">AKSHIT</span>
+              <span class="center-sub">Operator</span>
+            </div>
+          </div>
+          
+          <!-- Outer Nodes -->
+          <!-- Marketing -->
+          <div class="eco-node eco-orbit" style="--angle: 0deg; --orbit-r: 180px;" data-skill="marketing">
+            <div class="eco-orbit-inner">
+              <i data-lucide="megaphone"></i>
+              <span class="node-tooltip">Marketing</span>
+            </div>
+          </div>
+          
+          <!-- Performance -->
+          <div class="eco-node eco-orbit" style="--angle: 60deg; --orbit-r: 180px;" data-skill="performance">
+            <div class="eco-orbit-inner">
+              <i data-lucide="activity"></i>
+              <span class="node-tooltip">Performance</span>
+            </div>
+          </div>
+          
+          <!-- Automation -->
+          <div class="eco-node eco-orbit" style="--angle: 120deg; --orbit-r: 180px;" data-skill="automation">
+            <div class="eco-orbit-inner">
+              <i data-lucide="zap"></i>
+              <span class="node-tooltip">Automation</span>
+            </div>
+          </div>
+          
+          <!-- Business -->
+          <div class="eco-node eco-orbit" style="--angle: 180deg; --orbit-r: 180px;" data-skill="business">
+            <div class="eco-orbit-inner">
+              <i data-lucide="building"></i>
+              <span class="node-tooltip">Business</span>
+            </div>
+          </div>
+          
+          <!-- Design -->
+          <div class="eco-node eco-orbit" style="--angle: 240deg; --orbit-r: 180px;" data-skill="design">
+            <div class="eco-orbit-inner">
+              <i data-lucide="palette"></i>
+              <span class="node-tooltip">Design</span>
+            </div>
+          </div>
+          
+          <!-- AI -->
+          <div class="eco-node eco-orbit" style="--angle: 300deg; --orbit-r: 180px;" data-skill="ai">
+            <div class="eco-orbit-inner">
+              <i data-lucide="sparkles"></i>
+              <span class="node-tooltip">AI Stack</span>
+            </div>
+          </div>
+          
+          <!-- Connections lines will be drawn via SVG -->
+          <svg class="ecosystem-svg-lines" id="ecosystem-lines"></svg>
+        </div>
+        
+        <!-- Skill expansion panel -->
+        <div class="eco-details-panel" id="eco-details-panel">
+          <div class="panel-placeholder">
+            <i data-lucide="mouse-pointer" class="icon-pulse"></i>
+            <p>Hover over or click any ecosystem node to expand capabilities.</p>
+          </div>
+          <div class="panel-content hidden" id="eco-panel-content">
+            <span class="panel-badge" id="eco-badge">Category</span>
+            <h3 id="eco-title">Marketing Strategy</h3>
+            <p id="eco-description">Funnel architecture and messaging framework development across organic channels.</p>
+            <div class="panel-stack-title">Tech & Frameworks:</div>
+            <div class="panel-stack-tags" id="eco-tags">
+              <span>SEO</span><span>Google Analytics</span>
+            </div>
+            <div id="eco-cta-container" style="margin-top: 1.5rem;" class="hidden">
+              <a href="design.html" class="btn btn-primary btn-sm" style="display: inline-flex;">
+                View Creative Portfolio <i data-lucide="arrow-right" style="width: 14px; height: 14px; display: inline-block; vertical-align: middle; margin-left: 4px;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Experience Journey -->
+    <section id="experience" class="experience-section">
+      <div class="section-header">
+        <h2 class="section-title">Experience Journey</h2>
+        <p class="section-subtitle">Real-world roles driving business value, sales, and optimizations.</p>
+      </div>
+      
+      <div class="journey-timeline">
+        <div class="journey-bar"></div>
+        
+        <div class="journey-nodes">
+          <!-- Item 1 -->
+          <div class="journey-item reveal-slide" data-side="left">
+            <div class="journey-marker"></div>
+            <div class="journey-card">
+              <div class="journey-date">Apr 2026 – May 2026</div>
+              <h3>CHC Handlooms</h3>
+              <span class="journey-role text-gradient">Web Development & Operations Intern</span>
+              <p>Independently built and launched an inquiry-based B2B e-commerce platform and real-time inventory Telegram Bot sync workflow.</p>
+              <ul>
+                <li>Generated 400+ qualified inquiries within 8 months with 18% converted to orders.</li>
+                <li>Engineered Telegram Bot to sync product listings, saving ~400+ hours of manual labor per year.</li>
+                <li>Authored Phase 2 roadmap to save an additional 200+ hours/year, approved by the founder.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Item 2 -->
+          <div class="journey-item reveal-slide" data-side="right">
+            <div class="journey-marker"></div>
+            <div class="journey-card">
+              <div class="journey-date">Aug 2025 – Oct 2025</div>
+              <h3>Rocking Deals</h3>
+              <span class="journey-role text-gradient">Marketing Intern</span>
+              <p>Owned and scaled the influencer marketing programme, Instagram community growth, and campaign attribution.</p>
+              <ul>
+                <li>Recruited 8+ fashion creators, generating 150K+ impressions and 67% video completion rate.</li>
+                <li>Grew Instagram following by 133% (12K to 28K) and sustained a 7.5% engagement rate (4x average).</li>
+                <li>Built a 12-KPI creator scorecard and reallocated budget to lift estimated ROI by 2.1x.</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Item 3 -->
+          <div class="journey-item reveal-slide" data-side="left">
+            <div class="journey-marker"></div>
+            <div class="journey-card">
+              <div class="journey-date">Apr 2025 – Jun 2025</div>
+              <h3>Manoj International Pvt. Ltd.</h3>
+              <span class="journey-role text-gradient">Sales Development & Lead Qualification Intern</span>
+              <p>Qualified B2B prospect pipelines across Dubai, Germany, and European markets, designing sales assets.</p>
+              <ul>
+                <li>Researched and qualified 200+ global B2B prospects, gathering purchase intent signals.</li>
+                <li>Created a 3-tier prioritization system (Hot/Warm/Cold), escalating 42 hot leads directly.</li>
+                <li>Co-developed custom pitch decks for 5 key accounts, compressing prep time by 60%.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 8: Certifications -->
+    <section id="certifications" class="certifications-section">
+      <div class="section-header">
+        <h2 class="section-title">Verified Expertise</h2>
+        <p class="section-subtitle">Credentials in advertising platforms, automation systems, and analytics.</p>
+      </div>
+      
+      <div class="certs-grid">
+        <!-- Cert 1 -->
+        <div class="cert-card tilt-target">
+          <div class="cert-glow"></div>
+          <div class="cert-badge-visual">
+            <i data-lucide="palette"></i>
+          </div>
+          <h3>Adobe Creative Cloud</h3>
+          <span class="cert-org">Adobe Inc., 2024</span>
+          <p>Professional certification in Photoshop, Illustrator, and InDesign for high-fidelity visual production.</p>
+        </div>
+        
+        <!-- Cert 2 -->
+        <div class="cert-card tilt-target">
+          <div class="cert-glow"></div>
+          <div class="cert-badge-visual">
+            <i data-lucide="award"></i>
+          </div>
+          <h3>Meta Blueprint</h3>
+          <span class="cert-org">Meta, 2025</span>
+          <p>Digital Marketing Associate credentials covering Meta Ads Manager, Pixel tracking, and CBO optimization.</p>
+        </div>
+        
+        <!-- Cert 3 -->
+        <div class="cert-card tilt-target">
+          <div class="cert-glow"></div>
+          <div class="cert-badge-visual">
+            <i data-lucide="activity"></i>
+          </div>
+          <h3>Google Analytics 4</h3>
+          <span class="cert-org">Google, 2025</span>
+          <p>Advanced tracking certification in GA4 covering custom dimensions, funnel analysis, and conversions.</p>
+        </div>
+        
+        <!-- Cert 4 -->
+        <div class="cert-card tilt-target">
+          <div class="cert-glow"></div>
+          <div class="cert-badge-visual">
+            <i data-lucide="binary"></i>
+          </div>
+          <h3>HubSpot Marketing</h3>
+          <span class="cert-org">HubSpot Academy, 2024</span>
+          <p>Credentials in inbound strategies, buyer journey maps, pipeline setups, and email campaigns.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 8.5: Leadership & Co-Curricular -->
+    <section id="leadership" class="leadership-section">
+      <div class="section-header">
+        <h2 class="section-title">Leadership & Impact</h2>
+        <p class="section-subtitle">Driving student communities, organizing major panel series, and mentoring peers.</p>
+      </div>
+      
+      <div class="certs-grid">
+        <!-- Card 1 -->
+        <div class="cert-card tilt-target">
+          <div class="cert-glow"></div>
+          <div class="cert-badge-visual">
+            <i data-lucide="users"></i>
+          </div>
+          <h3>Design Team Lead</h3>
+          <span class="cert-org">HR Nexus — College Society (2023 - Present)</span>
+          <p>Led 8+ student designers across 4 major events. Introduced a briefing-and-template system that cut creative turnaround from 5 days to 2 days, growing event attendance by 113%.</p>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="cert-card tilt-target">
+          <div class="cert-glow"></div>
+          <div class="cert-badge-visual">
+            <i data-lucide="calendar"></i>
+          </div>
+          <h3>Organising Committee</h3>
+          <span class="cert-org">ICESBD — Industry Panel Series (2023 - 2024)</span>
+          <p>Co-led logistics, speaker coordination, and live facilitation for 3 panel discussions featuring 12+ leaders. Managed event budget and authored an insights brief distributed to 300+ students.</p>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="cert-card tilt-target">
+          <div class="cert-glow"></div>
+          <div class="cert-badge-visual">
+            <i data-lucide="book-open"></i>
+          </div>
+          <h3>Digital Skills Mentor</h3>
+          <span class="cert-org">Amity University Peer-Learning (2024 - Present)</span>
+          <p>Conducted 10+ workshop sessions on digital marketing fundamentals for 60+ first-year BBA students. Developed a reusable curriculum adopted by the faculty coordinator.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 9: My Process (Animated Connecting Line) -->
+    <section id="process" class="process-section">
+      <div class="section-header">
+        <h2 class="section-title">The Operator's Blueprint</h2>
+        <p class="section-subtitle">My structured approach to scoping, executing, and scaling growth ideas.</p>
+      </div>
+      
+      <div class="process-container">
+        <!-- SVG Connecting line -->
+        <svg class="process-svg-line-container" viewBox="0 0 100 600" preserveAspectRatio="none">
+          <path id="process-svg-path" d="M 50 0 Q 30 150 50 300 T 50 600" fill="transparent" stroke="url(#process-line-gradient)" stroke-width="4" stroke-linecap="round"/>
+          <defs>
+            <linearGradient id="process-line-gradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#FF6B00" />
+              <stop offset="100%" stop-color="#222222" />
+            </linearGradient>
+          </defs>
+        </svg>
+        
+        <div class="process-steps">
+          <!-- Step 1 -->
+          <div class="process-step-item" id="proc-step-1">
+            <div class="process-number-node">1</div>
+            <div class="process-info">
+              <h3>Research & Audit</h3>
+              <p>Auditing the existing channel distribution, analyzing current performance data, and mapping out the user funnel drop-offs.</p>
+            </div>
+          </div>
+          
+          <!-- Step 2 -->
+          <div class="process-step-item" id="proc-step-2">
+            <div class="process-number-node">2</div>
+            <div class="process-info">
+              <h3>Planning & System Design</h3>
+              <p>Designing workflows, selecting the tool stack (no-code, API syncs, ad platforms), and mapping out outreach sequences or creative cycles.</p>
+            </div>
+          </div>
+          
+          <!-- Step 3 -->
+          <div class="process-step-item" id="proc-step-3">
+            <div class="process-number-node">3</div>
+            <div class="process-info">
+              <h3>Build & Integrate</h3>
+              <p>Creating visual assets, setting up campaigns, configuring webhook connections, setting up tracking events, and testing exception flows.</p>
+            </div>
+          </div>
+          
+          <!-- Step 4 -->
+          <div class="process-step-item" id="proc-step-4">
+            <div class="process-number-node">4</div>
+            <div class="process-info">
+              <h3>Measure & Analyze</h3>
+              <p>Sourcing lead counts, revenue figures, and attribution metrics back into analytical sheets and comparing with baseline controls.</p>
+            </div>
+          </div>
+          
+          <!-- Step 5 -->
+          <div class="process-step-item" id="proc-step-5">
+            <div class="process-number-node">5</div>
+            <div class="process-info">
+              <h3>Optimize & Scale</h3>
+              <p>Iterating on high-performing copy versions, scaling the budgets of winning audiences, and hardening automation pipelines for volume.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 10: Current Focus (Spotlight Section) -->
+    <section id="current-focus" class="focus-section">
+      <div class="section-header">
+        <h2 class="section-title">Current Focus</h2>
+        <p class="section-subtitle">Emerging technologies and stacks I am actively tinkering with and deploying.</p>
+      </div>
+      
+      <div class="focus-grid">
+        <div class="focus-card">
+          <div class="focus-glow-orb purple"></div>
+          <div class="focus-badge">Technology</div>
+          <h3>AI Marketing Engines</h3>
+          <p>Using large language models (LLMs) to automatically generate, personalize, and localize copy variations at scale based on CRM traits.</p>
+        </div>
+        
+        <div class="focus-card">
+          <div class="focus-glow-orb cyan"></div>
+          <div class="focus-badge">Integration</div>
+          <h3>No-Code Middleware</h3>
+          <p>Configuring event brokers and webhooks via serverless endpoints to tie custom web forms to specialized sales and inventory databases.</p>
+        </div>
+        
+        <div class="focus-card">
+          <div class="focus-glow-orb teal"></div>
+          <div class="focus-badge">Channels</div>
+          <h3>Performance Loops</h3>
+          <p>Mastering privacy-first attribution methods including Conversion API (CAPI) mappings to feedback offline conversions directly into ad networks.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Section: Contact & Call To Action -->
+    <section id="contact" class="contact-section">
+      <!-- Wave background SVG -->
+      <div class="wave-bg-container">
+        <svg class="wave-svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path id="wave-path-1" fill="rgba(255, 107, 0, 0.05)" d="M0,96L80,128C160,160,320,224,480,240C640,256,800,224,960,192C1120,160,1280,128,1360,112L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+          <path id="wave-path-2" fill="rgba(138, 138, 138, 0.02)" d="M0,192L80,181.3C160,171,320,149,480,160C640,171,800,213,960,202.7C1120,192,1280,128,1360,96L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+        </svg>
+      </div>
+      
+      <div class="contact-container">
+        <div class="contact-content">
+          <h2 class="contact-title text-gradient">Let's Build Something Meaningful</h2>
+          <p class="contact-text">
+            Looking for opportunities in growth marketing, paid acquisition, workflow automation, and outbound sales operation designs. Let's exchange notes.
+          </p>
+          
+          <div class="contact-methods">
+            <a href="mailto:tanejaakshit9@gmail.com" class="contact-btn email-btn">
+              <i data-lucide="mail"></i> Email Me
+            </a>
+            <a href="https://www.linkedin.com/in/akshittaneja05/" target="_blank" rel="noopener" class="contact-btn linkedin-btn">
+              <i data-lucide="linkedin"></i> Connect on LinkedIn
+            </a>
+            <a href="https://docs.google.com/document/d/1AxNX2lyAj-68sQIteo2ETdor7ercWpg0/edit?usp=sharing&ouid=115959276039089935461&rtpof=true&sd=true" target="_blank" rel="noopener" class="contact-btn resume-btn" id="footer-resume-btn">
+              <i data-lucide="file-text"></i> Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <footer class="footer-bottom">
+        <p>&copy; 2026 Akshit. Designed and built with premium animations.</p>
+      </footer>
+    </section>
+
+  </main>
+  
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
