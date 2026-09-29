@@ -9,7 +9,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
@@ -19,31 +19,30 @@
 </head>
 <body>
 
-  <!-- Background Layer -->
+  <!-- Subtle Grain Overlay -->
   <div class="bg-noise"></div>
   
-  <!-- Animated Background Flares -->
-  <div class="orange-flares-container">
-    <div class="flare flare-1"></div>
-    <div class="flare flare-2"></div>
-    <div class="flare flare-3"></div>
-  </div>
-  
   <!-- Navigation -->
-  <header class="navbar">
+  <header class="navbar" id="navbar">
     <div class="nav-container">
       <a href="index.html" class="nav-logo">
-        <span class="logo-accent">▲</span> AKSHIT
+        <span class="logo-mark">●</span> AKSHIT
       </a>
-      <nav class="nav-menu">
+      <nav class="nav-menu" id="nav-menu">
         <a href="index.html#about" class="nav-link">About</a>
         <a href="index.html#what-i-build" class="nav-link">Services</a>
         <a href="index.html#featured-work" class="nav-link">Work</a>
+        <a href="index.html#skills" class="nav-link">Skills</a>
         <a href="index.html#experience" class="nav-link">Journey</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
       </nav>
       <div class="nav-cta">
-        <a href="index.html#contact" class="btn btn-secondary btn-sm">Let's Talk</a>
+        <a href="index.html#contact" class="btn btn-primary btn-sm">Let's Talk</a>
       </div>
+      <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
@@ -88,10 +87,10 @@
     </section>
 
     <!-- Design Gallery Section -->
-    <section class="design-showcase" id="gallery" style="padding-top: 4rem;">
-      <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
-        <h2 class="section-title" style="text-align: left;">Explore Creative Works</h2>
-        <p class="section-subtitle" style="margin: 0; max-width: 700px; text-align: left;">
+    <section class="design-showcase" id="gallery" style="max-width: 1360px; margin: 0 auto; padding: 2rem 2.5rem 5rem;">
+      <div style="margin-bottom: 2rem;">
+        <h2 style="font-size: 1.8rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.5rem; text-align: left; font-family: var(--font-heading, 'Plus Jakarta Sans', sans-serif);">Explore Creative Works</h2>
+        <p style="margin: 0; max-width: 700px; text-align: left; font-size: 0.95rem; color: var(--text-secondary, #9AA1AF);">
           Click on any visual to expand it in full screen and read the design breakdown.
         </p>
         

@@ -9,7 +9,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
@@ -22,28 +22,27 @@
   <!-- Background Layer -->
   <div class="bg-noise"></div>
   
-  <!-- Animated Background Flares -->
-  <div class="orange-flares-container">
-    <div class="flare flare-1"></div>
-    <div class="flare flare-2"></div>
-    <div class="flare flare-3"></div>
-  </div>
-  
   <!-- Navigation -->
-  <header class="navbar">
+  <header class="navbar" id="navbar">
     <div class="nav-container">
       <a href="index.html" class="nav-logo">
-        <span class="logo-accent">▲</span> AKSHIT
+        <span class="logo-mark">●</span> AKSHIT
       </a>
-      <nav class="nav-menu">
+      <nav class="nav-menu" id="nav-menu">
         <a href="index.html#about" class="nav-link">About</a>
         <a href="index.html#what-i-build" class="nav-link">Services</a>
         <a href="index.html#featured-work" class="nav-link">Work</a>
+        <a href="index.html#skills" class="nav-link">Skills</a>
         <a href="index.html#experience" class="nav-link">Journey</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
       </nav>
       <div class="nav-cta">
-        <a href="index.html#contact" class="btn btn-secondary btn-sm">Let's Talk</a>
+        <a href="index.html#contact" class="btn btn-primary btn-sm">Let's Talk</a>
       </div>
+      <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
@@ -52,37 +51,39 @@
     <section class="influencer-hero">
       <div class="hero-grid-overlay"></div>
       <div class="influencer-hero-content">
-        <a href="index.html#featured-work" class="back-link">
+        <a href="index.html#selected-work" class="back-link">
           <i data-lucide="arrow-left" style="width: 16px; height: 16px; display: inline-block; vertical-align: middle; margin-right: 4px;"></i> Back to Portfolio
         </a>
-        <div class="hero-badge" style="margin-top: 1.5rem;">
-          <span class="badge-dot"></span> Rocking Deals Campaign Review
+        <div style="display: inline-flex; align-items: center; gap: 0.55rem; font-family: var(--font-heading); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; color: var(--text-secondary); margin-top: 1.5rem; margin-bottom: 0.75rem; text-transform: uppercase;">
+          <span style="width: 7px; height: 7px; border-radius: 50%; background-color: var(--signal-coral); display: inline-block;"></span> Campaign Review • One Science Nutrition &amp; Rocking Deals
         </div>
-        <h1 class="section-title text-gradient" style="text-align: left; font-size: 3.5rem; margin-top: 1rem; margin-bottom: 1rem; max-width: 900px; line-height: 1.1;">
-          Influencer Campaigns & Measurement Framework
+        <h1 style="font-family: var(--font-heading); font-size: 3.2rem; font-weight: 800; letter-spacing: -0.04em; line-height: 1.15; margin-bottom: 1.2rem; color: var(--text-primary); text-align: left; max-width: 900px;">
+          Influencer Campaigns &amp; Growth Performance
         </h1>
-        <p class="hero-description" style="max-width: 800px; font-size: 1.2rem; margin-bottom: 3rem;">
-          How I built an influencer marketing programme from the ground up, managed creators across 3 cycles, and scaled campaign outcomes with a data-driven 12-KPI performance scorecard.
+        <p style="max-width: 800px; font-size: 1.15rem; margin-bottom: 3rem; color: var(--text-secondary); line-height: 1.65;">
+          Building end-to-end creator strategy and UGC pipelines. Scaled One Science Nutrition's social community from 28.3K to 34.4K (+21.5%) and grew Rocking Deals' Instagram following from 12K to 28K (+133%) with a 12-KPI creator scorecard.
         </p>
         
         <!-- Key Performance Grid -->
         <div class="metrics-summary-grid">
           <div class="summary-metric-card">
+            <span class="summary-metric-val">34.4K</span>
+            <span class="summary-metric-lbl">One Science Community</span>
+            <span class="summary-metric-trend">+21.5% follower growth</span>
+          </div>
+          <div class="summary-metric-card">
+            <span class="summary-metric-val">+133%</span>
+            <span class="summary-metric-lbl">Rocking Deals Growth</span>
+            <span class="summary-metric-trend">12K to 28K followers</span>
+          </div>
+          <div class="summary-metric-card">
+            <span class="summary-metric-val">7.5%</span>
+            <span class="summary-metric-lbl">Sustained Engagement</span>
+            <span class="summary-metric-trend">4x platform average</span>
+          </div>
+          <div class="summary-metric-card">
             <span class="summary-metric-val">150K+</span>
-            <span class="summary-metric-lbl">Total Impressions</span>
-          </div>
-          <div class="summary-metric-card">
-            <span class="summary-metric-val">8.2K</span>
-            <span class="summary-metric-lbl">Engagements</span>
-          </div>
-          <div class="summary-metric-card">
-            <span class="summary-metric-val">67%</span>
-            <span class="summary-metric-lbl">Video Completion Rate</span>
-            <span class="summary-metric-trend">vs. 43% platform baseline</span>
-          </div>
-          <div class="summary-metric-card">
-            <span class="summary-metric-val">-38%</span>
-            <span class="summary-metric-lbl">Cost-per-Engagement</span>
+            <span class="summary-metric-lbl">Organic Impressions</span>
             <span class="summary-metric-trend">2.1x campaign ROI lift</span>
           </div>
         </div>
@@ -93,21 +94,21 @@
     <section class="creator-showcase" id="creators" style="padding-top: 6rem;">
       <div class="section-header" style="text-align: left; margin-bottom: 4rem;">
         <h2 class="section-title" style="text-align: left;">Live Campaign Collaborations</h2>
-        <p class="section-subtitle" style="margin: 0; max-width: 700px; text-align: left;">
-          Click on any card to view the live Instagram Reel collaborations that I managed and scaled for Rocking Deals.
+        <p class="section-subtitle" style="margin: 0; max-width: 760px; text-align: left;">
+          Filter by brand to explore creator campaigns, UGC scripts, and performance reels managed for Rocking Deals and One Science Nutrition.
         </p>
         
         <!-- Filter Bar -->
         <div class="filter-bar">
-          <button class="filter-btn active" data-filter="all">All Reels</button>
-          <button class="filter-btn" data-filter="styling">Outfit & Styling Guides</button>
-          <button class="filter-btn" data-filter="review">Product & Haul Reviews</button>
+          <button class="filter-btn active" data-filter="all">All Campaigns</button>
+          <button class="filter-btn" data-filter="rocking-deals">Rocking Deals</button>
+          <button class="filter-btn" data-filter="one-science">One Science Nutrition</button>
         </div>
       </div>
 
       <div class="reels-gallery-grid">
         <!-- Reel 1 -->
-        <a href="https://www.instagram.com/reels/DKUBiY9z1tj/" target="_blank" rel="noopener" class="reel-showcase-card styling" data-category="styling">
+        <a href="https://www.instagram.com/reels/DKUBiY9z1tj/" target="_blank" rel="noopener" class="reel-showcase-card rocking-deals" data-category="rocking-deals">
           <div class="instagram-reel-mockup">
             <img src="assets/reel_1.jpg" alt="Instagram Reel" class="reel-img">
             <div class="reel-overlay">
@@ -125,7 +126,7 @@
         </a>
         
         <!-- Reel 2 -->
-        <a href="https://www.instagram.com/reels/DJ9WgBqpIEc/" target="_blank" rel="noopener" class="reel-showcase-card styling" data-category="styling">
+        <a href="https://www.instagram.com/reels/DJ9WgBqpIEc/" target="_blank" rel="noopener" class="reel-showcase-card rocking-deals" data-category="rocking-deals">
           <div class="instagram-reel-mockup">
             <img src="assets/reel_2.jpg" alt="Instagram Reel" class="reel-img">
             <div class="reel-overlay">
@@ -142,9 +143,8 @@
           </div>
         </a>
 
-
         <!-- Reel 4 -->
-        <a href="https://www.instagram.com/reels/DK4qkdEhayV/" target="_blank" rel="noopener" class="reel-showcase-card review" data-category="review">
+        <a href="https://www.instagram.com/reels/DK4qkdEhayV/" target="_blank" rel="noopener" class="reel-showcase-card rocking-deals" data-category="rocking-deals">
           <div class="instagram-reel-mockup">
             <img src="assets/reel_4.jpg" alt="Instagram Reel" class="reel-img">
             <div class="reel-overlay">
@@ -162,7 +162,7 @@
         </a>
 
         <!-- Reel 5 -->
-        <a href="https://www.instagram.com/reels/DLWtC4YoPuO/" target="_blank" rel="noopener" class="reel-showcase-card review" data-category="review">
+        <a href="https://www.instagram.com/reels/DLWtC4YoPuO/" target="_blank" rel="noopener" class="reel-showcase-card rocking-deals" data-category="rocking-deals">
           <div class="instagram-reel-mockup">
             <img src="assets/reel_5.png" alt="Instagram Reel" class="reel-img">
             <div class="reel-overlay">
@@ -180,7 +180,7 @@
         </a>
 
         <!-- Reel 6 -->
-        <a href="https://www.instagram.com/reels/DLZRihNKRx6/" target="_blank" rel="noopener" class="reel-showcase-card styling" data-category="styling">
+        <a href="https://www.instagram.com/reels/DLZRihNKRx6/" target="_blank" rel="noopener" class="reel-showcase-card rocking-deals" data-category="rocking-deals">
           <div class="instagram-reel-mockup">
             <img src="assets/reel_6.png" alt="Instagram Reel" class="reel-img">
             <div class="reel-overlay">
@@ -198,7 +198,7 @@
         </a>
 
         <!-- Reel 7 -->
-        <a href="https://www.instagram.com/reels/DLZaEiMthii/" target="_blank" rel="noopener" class="reel-showcase-card styling" data-category="styling">
+        <a href="https://www.instagram.com/reels/DLZaEiMthii/" target="_blank" rel="noopener" class="reel-showcase-card rocking-deals" data-category="rocking-deals">
           <div class="instagram-reel-mockup">
             <img src="assets/reel_7.jpg" alt="Instagram Reel" class="reel-img">
             <div class="reel-overlay">
@@ -216,7 +216,7 @@
         </a>
 
         <!-- Reel 8 -->
-        <a href="https://www.instagram.com/reels/DLcwTQ4qKKF/" target="_blank" rel="noopener" class="reel-showcase-card review" data-category="review">
+        <a href="https://www.instagram.com/reels/DLcwTQ4qKKF/" target="_blank" rel="noopener" class="reel-showcase-card rocking-deals" data-category="rocking-deals">
           <div class="instagram-reel-mockup">
             <img src="assets/reel_8.png" alt="Instagram Reel" class="reel-img">
             <div class="reel-overlay">
@@ -234,7 +234,7 @@
         </a>
 
         <!-- Reel 9 -->
-        <a href="https://www.instagram.com/reels/DLpVYMSpvaN/" target="_blank" rel="noopener" class="reel-showcase-card styling" data-category="styling">
+        <a href="https://www.instagram.com/reels/DLpVYMSpvaN/" target="_blank" rel="noopener" class="reel-showcase-card rocking-deals" data-category="rocking-deals">
           <div class="instagram-reel-mockup">
             <img src="assets/reel_9.jpg" alt="Instagram Reel" class="reel-img">
             <div class="reel-overlay">
@@ -252,7 +252,7 @@
         </a>
 
         <!-- Reel 10 -->
-        <a href="https://www.instagram.com/reels/DLjjo5tiuic/" target="_blank" rel="noopener" class="reel-showcase-card styling" data-category="styling">
+        <a href="https://www.instagram.com/reels/DLjjo5tiuic/" target="_blank" rel="noopener" class="reel-showcase-card rocking-deals" data-category="rocking-deals">
           <div class="instagram-reel-mockup">
             <img src="assets/reel_10.png" alt="Instagram Reel" class="reel-img">
             <div class="reel-overlay">
@@ -270,7 +270,7 @@
         </a>
 
         <!-- Reel 11 -->
-        <a href="https://www.instagram.com/reels/DLrKxozymoQ/" target="_blank" rel="noopener" class="reel-showcase-card styling" data-category="styling">
+        <a href="https://www.instagram.com/reels/DLrKxozymoQ/" target="_blank" rel="noopener" class="reel-showcase-card rocking-deals" data-category="rocking-deals">
           <div class="instagram-reel-mockup">
             <img src="assets/reel_11.png" alt="Instagram Reel" class="reel-img">
             <div class="reel-overlay">
@@ -288,7 +288,7 @@
         </a>
 
         <!-- Reel 12 -->
-        <a href="https://www.instagram.com/reels/DL4SoHOyhlY/" target="_blank" rel="noopener" class="reel-showcase-card review" data-category="review">
+        <a href="https://www.instagram.com/reels/DL4SoHOyhlY/" target="_blank" rel="noopener" class="reel-showcase-card rocking-deals" data-category="rocking-deals">
           <div class="instagram-reel-mockup">
             <img src="assets/reel_12.jpg" alt="Instagram Reel" class="reel-img">
             <div class="reel-overlay">
@@ -306,7 +306,7 @@
         </a>
 
         <!-- Reel 13 -->
-        <a href="https://www.instagram.com/reel/DMXyJsAviyw/" target="_blank" rel="noopener" class="reel-showcase-card styling" data-category="styling">
+        <a href="https://www.instagram.com/reel/DMXyJsAviyw/" target="_blank" rel="noopener" class="reel-showcase-card rocking-deals" data-category="rocking-deals">
           <div class="instagram-reel-mockup">
             <img src="assets/reel_13.jpg" alt="Instagram Reel" class="reel-img">
             <div class="reel-overlay">
@@ -324,7 +324,7 @@
         </a>
 
         <!-- Reel 14 -->
-        <a href="https://www.instagram.com/reel/DMIKwuBPf1V/" target="_blank" rel="noopener" class="reel-showcase-card styling" data-category="styling">
+        <a href="https://www.instagram.com/reel/DMIKwuBPf1V/" target="_blank" rel="noopener" class="reel-showcase-card rocking-deals" data-category="rocking-deals">
           <div class="instagram-reel-mockup">
             <img src="assets/reel_14.jpg" alt="Instagram Reel" class="reel-img">
             <div class="reel-overlay">
@@ -342,7 +342,7 @@
         </a>
 
         <!-- Reel 15 -->
-        <a href="https://www.instagram.com/reel/DJ0r63Yp17u/" target="_blank" rel="noopener" class="reel-showcase-card styling" data-category="styling">
+        <a href="https://www.instagram.com/reel/DJ0r63Yp17u/" target="_blank" rel="noopener" class="reel-showcase-card rocking-deals" data-category="rocking-deals">
           <div class="instagram-reel-mockup">
             <img src="assets/reel_15.jpg" alt="Instagram Reel" class="reel-img">
             <div class="reel-overlay">
@@ -358,6 +358,514 @@
             <p>High-virality content offering quick styling tips and product promotions.</p>
           </div>
         </a>
+
+        <!-- ============================================================
+             ONE SCIENCE NUTRITION CAMPAIGN REELS (28 LIVE COLLABORATIONS)
+             ============================================================ -->
+        <!-- One Science Reel 1 -->
+        <a href="https://www.instagram.com/p/DbZ1FewSf60/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_1.jpg" alt="Nitra Whey Formulation Breakdown" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Nitra Whey Formulation Breakdown</h3>
+            <p>Creator breakdown highlighting 27g protein purity, digestive enzymes, and zero amino spiking.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 2 -->
+        <a href="https://www.instagram.com/p/DbnRu00BNNY/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_2.jpg" alt="Pre-WOD NitraPump Muscle Focus" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Pre-WOD NitraPump Muscle Focus</h3>
+            <p>High-energy gym routine testing explosive pumps, beta-alanine tingling, and steady focus.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 3 -->
+        <a href="https://www.instagram.com/p/DbnVJraI1xm/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_3.jpg" alt="Creatine Monohydrate Loading Protocol" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Creatine Monohydrate Loading Protocol</h3>
+            <p>Educational UGC breaking down ATP regeneration, strength output, and daily saturation.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 4 -->
+        <a href="https://www.instagram.com/p/Db2YARjsvY5/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_4.jpg" alt="Post-Workout Recovery Shake Routine" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Post-Workout Recovery Shake Routine</h3>
+            <p>Quick lifestyle reel showing fast mixability, macro split, and rich chocolate flavor.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 5 -->
+        <a href="https://www.instagram.com/p/Db5A35qp9Fn/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_5.jpg" alt="ISO Gold Whey Isolate Lab Test" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>ISO Gold Whey Isolate Lab Test</h3>
+            <p>In-depth product scrutiny verifying lactose-free filtration and lean tissue synthesis.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 6 -->
+        <a href="https://www.instagram.com/p/Db5Y2apqc9u/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_6.jpg" alt="Athlete Morning Nutrition Stack" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Athlete Morning Nutrition Stack</h3>
+            <p>Daily wellness routine pairing One Science Multivitamins, Fish Oil, and Whey Protein.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 7 -->
+        <a href="https://www.instagram.com/p/Db5l_83TG17/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_7.jpg" alt="Heavy Pull Day Fuel with Nitra Whey" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Heavy Pull Day Fuel with Nitra Whey</h3>
+            <p>Back workout performance vlog documenting strength milestones and recovery pacing.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 8 -->
+        <a href="https://www.instagram.com/p/Db7_9gNRLk1/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_8.jpg" alt="Mass Gainer XXL Shake Preparation" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Mass Gainer XXL Shake Preparation</h3>
+            <p>Calorie-dense bulking guide with oats, peanut butter, and clean carbohydrates.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 9 -->
+        <a href="https://www.instagram.com/p/Db-MjgbBxZN/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_9.jpg" alt="BCAA 2:1:1 Intra-Workout Endurance" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>BCAA 2:1:1 Intra-Workout Endurance</h3>
+            <p>Hydration and electrolyte review keeping fatigue low during 90-minute hypertrophy sessions.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 10 -->
+        <a href="https://www.instagram.com/p/DcA_ADwIub0/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_10.jpg" alt="Supplement Stack Unboxing Haul" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Supplement Stack Unboxing Haul</h3>
+            <p>Direct-to-camera unboxing celebrating official brand authenticity and fast dispatch.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 11 -->
+        <a href="https://www.instagram.com/p/Dcdn5n_Jx8Z/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_11.jpg" alt="Arm Day Pump Routine & Pre-Workout" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Arm Day Pump Routine & Pre-Workout</h3>
+            <p>Explosive arm workout demonstrating muscle vascularity and formulation potency.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 12 -->
+        <a href="https://www.instagram.com/p/DcLkk1bJq1E/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_12.jpg" alt="Whey vs Isolate: Which One To Buy?" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Whey vs Isolate: Which One To Buy?</h3>
+            <p>Problem-solving buyer guide comparing calorie counts, absorption speed, and budget fit.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 13 -->
+        <a href="https://www.instagram.com/p/DcL4m03TdzI/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_13.jpg" alt="Leg Day Intensity with One Science" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Leg Day Intensity with One Science</h3>
+            <p>Squat PR vlog testing sustained energy without jitters or post-workout crashes.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 14 -->
+        <a href="https://www.instagram.com/p/DcgVi8kz-k6/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_14.jpg" alt="Daily Micronutrient Defense" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Daily Micronutrient Defense</h3>
+            <p>Daily vitality breakdown focusing on immunity boosters, joint health, and Omega-3s.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 15 -->
+        <a href="https://www.instagram.com/p/DcX3e0vzRqF/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_15.jpg" alt="Clean Bulking High-Protein Oatmeal" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Clean Bulking High-Protein Oatmeal</h3>
+            <p>High-engagement recipe reel showing creative culinary ways to use Whey Protein powder.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 16 -->
+        <a href="https://www.instagram.com/p/DclH7luhcz0/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_16.jpg" alt="Chest & Triceps Hypertrophy Session" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Chest & Triceps Hypertrophy Session</h3>
+            <p>High-energy gym vlog powered by NitraPump pre-workout for maximum pressing power.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 17 -->
+        <a href="https://www.instagram.com/p/DcijXFLTdoH/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_17.jpg" alt="Nitra Whey Chocolate Caramel Review" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Nitra Whey Chocolate Caramel Review</h3>
+            <p>Taste test reaction comparing flavor profile, sweetness balance, and smooth texture.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 18 -->
+        <a href="https://www.instagram.com/p/DciWgv4T9B0/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_18.jpg" alt="Essential Athlete Supplements Ranked" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Essential Athlete Supplements Ranked</h3>
+            <p>Tier-list video ranking Whey, Creatine, Multivitamins, and Glutamine for beginners.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 19 -->
+        <a href="https://www.instagram.com/p/DciknvYJxve/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_19.jpg" alt="High-Intensity Conditioning & Recovery" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>High-Intensity Conditioning & Recovery</h3>
+            <p>Cardio and functional training vlog showcasing rapid muscle repair with BCAA intra-fuel.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 20 -->
+        <a href="https://www.instagram.com/p/DciLLYCIo1a/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_20.jpg" alt="Why Professional Athletes Pick One Science" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Why Professional Athletes Pick One Science</h3>
+            <p>Brand trust reel spotlighting European testing standards, GMP certification, and purity.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 21 -->
+        <a href="https://www.instagram.com/p/DcjQNCFS9v-/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_21.jpg" alt="Late Night Casein & Recovery Shake" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Late Night Casein & Recovery Shake</h3>
+            <p>Slow-digesting nighttime protein guide sustaining muscle repair during sleep cycles.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 22 -->
+        <a href="https://www.instagram.com/p/Dck8VVgRuSQ/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_22.jpg" alt="Deadlift PR Session | Powered by Nitra Whey" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Deadlift PR Session | Powered by Nitra Whey</h3>
+            <p>Heavy compound lifting showcase testing core stability and rapid muscle bounce-back.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 23 -->
+        <a href="https://www.instagram.com/p/Dc0GcLSMlQE/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_23.jpg" alt="Beginner's Gym Starter Supplement Kit" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Beginner's Gym Starter Supplement Kit</h3>
+            <p>Practical shopping guide covering essentials to accelerate first 90 days in the gym.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 24 -->
+        <a href="https://www.instagram.com/p/DdBgJEZJxYi/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_24.jpg" alt="Shoulder Mobility & Pump Workout" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Shoulder Mobility & Pump Workout</h3>
+            <p>Deltoid hypertrophy training with explosive focus and steady vascular pumps.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 25 -->
+        <a href="https://www.instagram.com/p/DdEA9ZYhpYy/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_25.jpg" alt="Authenticity Check: How To Spot Fakes" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Authenticity Check: How To Spot Fakes</h3>
+            <p>Brand security educational reel showing holographic seals and QR authentication codes.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 26 -->
+        <a href="https://www.instagram.com/p/DdeEZz-RoTb/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_26.jpg" alt="Glutamine Recovery & Gut Health Guide" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Glutamine Recovery & Gut Health Guide</h3>
+            <p>Deep dive into immune recovery, soreness reduction, and intestinal tissue health.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 27 -->
+        <a href="https://www.instagram.com/p/DdjKNk1pKwS/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_27.jpg" alt="Full Day of Eating with One Science" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Full Day of Eating with One Science</h3>
+            <p>Complete macro breakdown documenting 180g protein intake across whole foods and shakes.</p>
+          </div>
+        </a>
+
+        <!-- One Science Reel 28 -->
+        <a href="https://www.instagram.com/p/DdlzrcdTgl4/" target="_blank" rel="noopener" class="reel-showcase-card one-science" data-category="one-science">
+          <div class="instagram-reel-mockup">
+            <img src="assets/os_reel_28.jpg" alt="Weekend Flash Sale & Exclusive Bundle" class="reel-img" loading="lazy">
+            <div class="reel-overlay">
+              <div class="play-btn-circle"><i data-lucide="play"></i></div>
+              <div class="reel-metrics">
+                <span><i data-lucide="external-link" style="width: 12px; height: 12px; margin-right: 4px; display: inline-block; vertical-align: middle;"></i>Watch Reel</span>
+              </div>
+            </div>
+          </div>
+          <div class="reel-info-panel">
+            <span class="creator-handle">@onesciencenutrition</span>
+            <h3>Weekend Flash Sale & Exclusive Bundle</h3>
+            <p>Promotional launch reel driving traffic to limited-edition bundle offers and gifts.</p>
+          </div>
+        </a>
+
       </div>
     </section>
 
@@ -560,24 +1068,43 @@
       // Creator filter logic
       const filterBtns = document.querySelectorAll('.filter-btn');
       const creatorCards = document.querySelectorAll('.reel-showcase-card');
+
+      function applyFilter(filterVal) {
+        filterBtns.forEach(b => {
+          if (b.getAttribute('data-filter') === filterVal) {
+            b.classList.add('active');
+          } else {
+            b.classList.remove('active');
+          }
+        });
+
+        creatorCards.forEach(card => {
+          if (filterVal === 'all') {
+            card.style.display = 'flex';
+          } else if (card.classList.contains(filterVal)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        if (typeof lucide !== 'undefined') {
+          lucide.createIcons();
+        }
+      }
+
       filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
-          // Toggle active button class
-          filterBtns.forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-
           const filterVal = btn.getAttribute('data-filter');
-          creatorCards.forEach(card => {
-            if (filterVal === 'all') {
-              card.style.display = 'flex';
-            } else if (card.classList.contains(filterVal)) {
-              card.style.display = 'flex';
-            } else {
-              card.style.display = 'none';
-            }
-          });
+          applyFilter(filterVal);
         });
       });
+
+      // Check URL hash on load (e.g., #rocking-deals or #one-science)
+      const currentHash = window.location.hash.replace('#', '');
+      if (['rocking-deals', 'one-science', 'all'].includes(currentHash)) {
+        applyFilter(currentHash);
+      }
 
       // A/B test format selector toggles
       const btnReels = document.getElementById('btn-reels');
