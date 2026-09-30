@@ -511,21 +511,73 @@ section {
   color: var(--text-color);
 }
 
+.hero-logo-card {
+  padding: 0.85rem 1.1rem;
+  background: rgba(18, 18, 18, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 12px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45);
+  width: auto;
+  max-width: 440px;
+  z-index: 2;
+}
+
+.hero-logo-card:hover {
+  border-color: rgba(255, 107, 0, 0.5);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+  transform: translateY(-4px);
+}
+
+.hero-logo-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.logo-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 550;
+  color: #f0f0f0;
+  padding: 0.35rem 0.7rem;
+  background: #191919;
+  border: 1px solid #2b2b2b;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.logo-chip:hover {
+  background: #222222;
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.platform-chip-lg {
+  background: #161616;
+  border-color: #303030;
+  font-weight: 600;
+}
+
 .card-1 {
-  top: 15%;
-  left: 5%;
+  top: 10%;
+  left: 0%;
   animation: float-1 6s ease-in-out infinite alternate;
 }
 
 .card-2 {
-  top: 50%;
-  right: 5%;
+  top: 45%;
+  right: -4%;
   animation: float-2 7s ease-in-out infinite alternate;
 }
 
 .card-3 {
-  bottom: 10%;
-  left: 20%;
+  bottom: 8%;
+  left: 5%;
   animation: float-3 8s ease-in-out infinite alternate;
 }
 

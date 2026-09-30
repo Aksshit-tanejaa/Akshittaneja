@@ -47,11 +47,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 2. Rotating Keywords Typing Animation
   const rotatingKeywords = [
-    "Growth Marketing",
-    "Performance Marketing",
-    "Automation Systems",
-    "Business Development",
-    "No-Code Building",
+    "Brand & Growth Marketing",
+    "Influencer Marketing",
+    "Creator Strategy",
+    "Partnerships & Activations",
     "Content Strategy"
   ];
   const keywordRotator = document.getElementById('keyword-rotator');
